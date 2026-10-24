@@ -1,5 +1,9 @@
 # Napkin-to-Stack: giving ArchBuddy eyes
 
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
+[![Requirements](https://img.shields.io/badge/requirements-strands--agents%20%7C%20boto3%20%7C%20pillow-informational.svg)](requirements.txt)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 ArchBuddy is a Strands Agents + Amazon Bedrock architecture-review agent. It reviews designs for
 production gaps and saves a starter AWS CDK stack. This project adds **one tool**,
 `read_whiteboard`, so it can work straight from a photo of a hand-drawn diagram.
