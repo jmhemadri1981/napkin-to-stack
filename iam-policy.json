@@ -1,0 +1,26 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AgentAndVisionModel",
+      "Effect": "Allow",
+      "Action": ["bedrock:InvokeModel", "bedrock:InvokeModelWithResponseStream"],
+      "Resource": [
+        "arn:aws:bedrock:*::foundation-model/anthropic.claude-sonnet-4-6*",
+        "arn:aws:bedrock:*:*:inference-profile/*anthropic.claude-sonnet-4-6*"
+      ]
+    },
+    {
+      "Sid": "HandwritingOCR",
+      "Effect": "Allow",
+      "Action": "rekognition:DetectText",
+      "Resource": "*"
+    },
+    {
+      "Sid": "OptionalReadDiagramsFromS3",
+      "Effect": "Allow",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::YOUR-DIAGRAM-BUCKET/*"
+    }
+  ]
+}
