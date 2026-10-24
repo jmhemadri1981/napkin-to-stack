@@ -64,3 +64,8 @@ agent = Agent(tools=[...your tools..., read_whiteboard])
 | `tests/` | Offline tests with stubbed AWS clients |
 | `iam-policy.json` | Least-privilege policy |
 | `SUBMISSION.md` / `DEMO_SCRIPT.md` | Builder Center write-up and video script |
+| `LICENSE` | MIT license |
+
+## License
+
+Released under the [MIT License](LICENSE). Copyright (c) 2026 Hemadri.
