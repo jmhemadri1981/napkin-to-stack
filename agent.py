@@ -47,7 +47,7 @@ def save_file(filename: str, content: str) -> str:
         content: Full file contents.
     """
     safe = re.sub(r"[^A-Za-z0-9._-]", "_", Path(filename).name) or "output.txt"
-    OUTPUT_DIR.mkdir(exist_ok=True)
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     path = OUTPUT_DIR / safe
     path.write_text(content, encoding="utf-8")
     return f"Saved {len(content)} characters to output/{safe}"
